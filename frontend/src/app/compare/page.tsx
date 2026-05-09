@@ -12,8 +12,9 @@ export default function ComparePage() {
   const [error, setError] = useState('')
 
   useEffect(() => {
-    getSalaries().then(setAllSalaries)
+    getSalaries().then((data: any) => setAllSalaries(data))
   }, [])
+
 
   const handleCompare = async () => {
     if (!id1 || !id2) return
