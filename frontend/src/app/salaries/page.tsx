@@ -19,7 +19,7 @@ function SalariesContent() {
     location: searchParams.get('location') || '',
   })
   
-  const [data, setData] = useState([])
+  const [data, setData] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
