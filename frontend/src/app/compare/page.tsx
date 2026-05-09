@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { getSalaries, getCompare } from '@/lib/api'
 
 export default function ComparePage() {
-  const [allSalaries, setAllSalaries] = useState([])
+  const [allSalaries, setAllSalaries] = useState<any[]>([])
   const [id1, setId1] = useState('')
   const [id2, setId2] = useState('')
   const [comparison, setComparison] = useState<any>(null)
