@@ -2,6 +2,9 @@ import React from 'react'
 import { getCompany } from '@/lib/api'
 import { SalaryTable } from '@/components/SalaryTable'
 
+export const dynamic = 'force-dynamic'
+
+
 export default async function CompanyPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   let data = null
